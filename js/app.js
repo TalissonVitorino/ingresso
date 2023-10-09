@@ -11,7 +11,7 @@ function comprarIngresso(quantidadeAComprar, tipoIngresso) {
     if (quantidadeAComprar > quantidadeDisponivel) {
         alert(`Quantidade indisponivel para o tipo ${tipoIngresso}.`);
     } else {
-        alert('Compra realizada com sucesso!');
+        alert('A compra foi realizada!');
         quantidadeDisponivel = quantidadeDisponivel - quantidadeAComprar;
         document.getElementById(`qtd-${tipoIngresso}`).textContent = quantidadeDisponivel;
     }
